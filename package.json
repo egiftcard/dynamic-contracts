@@ -1,0 +1,29 @@
+{
+  "name": "@egiftcardv/dynamic-contracts",
+  "description": "Architectural pattern for writing dynamic smart contracts in Solidity",
+  "version": "1.2.5",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/egiftcardv/dynamic-contracts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/egiftcardv/dynamic-contracts/issues"
+  },
+  "author": "egiftcard engineering <eng@egiftcard.cc>",
+  "homepage": "https://egiftcard.cc",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "**/*.sol"
+  ],
+  "dependencies": {},
+  "scripts": {
+    "gas": "forge test --mc Benchmark --gas-report > gasreport.txt"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
