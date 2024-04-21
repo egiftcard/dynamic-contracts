@@ -1,7 +1,7 @@
 {
-  "name": "@egiftcardv/dynamic-contracts",
+  "name": "@egiftcard/dynamic-contracts",
   "description": "Architectural pattern for writing dynamic smart contracts in Solidity",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "main": "index.js",
   "repository": {
     "type": "git",

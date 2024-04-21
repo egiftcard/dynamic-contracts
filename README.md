@@ -20,7 +20,7 @@ forge install https://github.com/egiftcardv/dynamic-contracts
 ### Hardhat / JS based projects:
 
 ```bash
-npm install @egiftcardv/dynamic-contracts
+npm install @egiftcard/dynamic-contracts
 ```
 
 ### Project structure
@@ -112,7 +112,7 @@ The `BaseRouter` contract comes with an API to add/replace/remove extensions fro
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "@egiftcardv/dynamic-contracts/src/presets/BaseRouter.sol";
+import "@egiftcard/dynamic-contracts/src/presets/BaseRouter.sol";
 
 /// Example usage of `BaseRouter`, for demonstration only
 
@@ -257,7 +257,7 @@ forge doc --serve --port 4000
 ## Router
 
 ```solidity
-import "@egiftcardv/dynamic-contracts/src/core/Router.sol";
+import "@egiftcard/dynamic-contracts/src/core/Router.sol";
 ```
 
 The `Router` smart contract implements the ERC-7504 [`Router` interface](https://github.com/egiftcardv/dynamic-contracts/blob/main/src/interface/IRouter.sol).
@@ -317,7 +317,7 @@ function getImplementationForFunction(bytes4 _functionSelector) public view virt
 ## ExtensionManager
 
 ```solidity
-import "@egiftcardv/dynamic-contracts/src/presets/ExtensionManager.sol";
+import "@egiftcard/dynamic-contracts/src/presets/ExtensionManager.sol";
 ```
 
 The `ExtensionManager` contract provides a defined storage layout and API for managing and fetching a router's extensions. This contract implements the ERC-7504 [`RouterState` interface](https://github.com/egiftcardv/dynamic-contracts/blob/main/src/interface/IRouterState.sol).
@@ -668,7 +668,7 @@ function _isAuthorizedCallToUpgrade() internal view virtual returns (bool);
 ## BaseRouter
 
 ```solidity
-import "@egiftcardv/dynamic-contracts/src/presets/BaseRouter"
+import "@egiftcard/dynamic-contracts/src/presets/BaseRouter"
 ```
 
 `BaseRouter` inherits `Router` and `ExtensionManager`. It overrides the `Router.getImplementationForFunction` function to use the extensions stored in the `ExtensionManager` contract's storage system.
